@@ -1,0 +1,198 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Section Styles */
+section {
+  padding: 60px 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-heading h2 {
+  font-size: 32px;
+  color: #333;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  margin-bottom: 30px;
+}
+
+.experience-item h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.experience-date {
+  font-style: italic;
+  color: #666;
+}
+
+.project-item h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Contact Section Styles */
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact ul li {
+  margin-bottom: 10px;
+}
+
+#contact ul li i {
+  margin-right: 5px;
+  color: #333;
+}
+
+/* Fancy Styles */
+/* Animations */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+/* Parallax Scrolling */
+header {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Customized Typography */
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+/* Video Backgrounds */
+header {
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Modal Windows and Overlays */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Customized Hover Effects */
+button:hover {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+a:hover {
+  color: #ffcc00;
+}
+
+/* Background Gradients and Patterns */
+section {
+  background: linear-gradient(to bottom, #fff 0%, #f2f2f2 100%);
+}
+
+/* Microinteractions */
+a {
+  transition: all 0.3s ease;
+}
+
+a.scroll-link {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  nav ul li {
+    margin-left: 10px;
+  }
+
+  .section-content {
+    padding: 0 20px;
+  }
+}
